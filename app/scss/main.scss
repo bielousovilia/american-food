@@ -1,0 +1,21 @@
+@import "vars";
+@import "mixins";
+
+// font-family: 'Bebas Neue', cursive;
+// font-family: 'Alfa Slab One', cursive;
+// font-family: 'Montserrat', sans-serif;
+
+body {
+    box-sizing: border-box;
+    @include style__text($montserrat, 14px, 400, 24px, 1px, #000);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    height: 100vh;
+    margin: 0px auto;
+    padding: 0px 15px;
+}
+
+@import "header";

@@ -1,0 +1,48 @@
+header {
+    background: {
+        image: url();
+        repeat: no-repeat;
+        size: cover;
+    }
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 0px 0px;
+}
+
+.logo__phone {
+    @include style__text($montserrat, 17px, 700, 24px, 1px, $brown);
+}
+
+.logo__icon {
+    font-size: 28px;
+}
+
+nav {
+    .menu {
+        display: flex;
+        justify-content: flex-end;
+        list-style-type: none;
+    }
+
+    .menu__item {
+        margin-left: 15px;
+        @include style__text($bebasNeue, 21px, 400, 24px, 1px, $brown)
+    }
+
+    .menu__link {
+        display: inline-block;
+        padding: 15px;
+        text-decoration: none;
+        color: $brown;
+
+        transition: color 0.25s linear;
+    }
+
+    .menu__link:hover {
+        color: #d1661a;
+    }
+}

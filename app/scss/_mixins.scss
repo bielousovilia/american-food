@@ -1,0 +1,10 @@
+@mixin style__text ($style, $size, $weight, $lineHeight, $letterSpasing, $color) {
+    font: {
+        family: $style;
+        size: $size;
+        weight: $weight; 
+    }
+    line-height: $lineHeight;
+    letter-spacing: $letterSpasing;
+    color: $color;
+}
