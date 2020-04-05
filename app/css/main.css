@@ -209,3 +209,84 @@ nav {
 .burgers__img {
   background-repeat: no-repeat;
   background-size: cover; }
+
+.choose {
+  padding: 35px 0px 65px; }
+
+.choose__text {
+  text-align: center; }
+
+.choose__link {
+  display: inline-block;
+  margin-bottom: 40px;
+  padding: 15px 20px;
+  background-color: #ffc045;
+  font-family: "Bebas Neue", cursive;
+  font-size: 25px;
+  font-weight: 400px;
+  line-height: 32px;
+  letter-spacing: 1px;
+  color: #3d2514;
+  text-decoration: none; }
+
+.choose__title {
+  margin-bottom: 30px;
+  font-family: "Alfa Slab One", cursive;
+  font-size: 50px;
+  font-weight: 400px;
+  line-height: 36px;
+  letter-spacing: 1px;
+  color: #3d2514; }
+
+.choose__sign {
+  margin-bottom: 60px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 1px;
+  color: #3d2514; }
+
+.choose__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline; }
+
+.burger__block {
+  width: 33.33333%;
+  text-align: center; }
+  .burger__block .burger__img {
+    margin-bottom: 70px; }
+  .burger__block .burger__name {
+    margin-bottom: 30px;
+    font-family: "Bebas Neue", cursive;
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 1px;
+    color: #3d2514; }
+  .burger__block .burger__text {
+    margin-bottom: 35px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 1px;
+    color: #3d2514; }
+  .burger__block .burger__link {
+    display: inline-block;
+    padding: 15px 25px;
+    font-family: "Alfa Slab One", cursive;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 37px;
+    letter-spacing: 1px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #bf2222; }
