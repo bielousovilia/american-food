@@ -155,3 +155,57 @@ nav {
   right: 0%;
   bottom: 0%;
   opacity: 0.9; }
+
+.burgers {
+  padding: 80px 20px 35px; }
+
+.burgers__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.burgers__left, .burgers__right, .burgers__bottom {
+  position: relative; }
+
+.burgers__left, .burgers__right {
+  width: 50%; }
+
+.burgers__left {
+  margin-right: 20px; }
+
+.burgers__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 20px; }
+
+.burgers__title {
+  position: absolute;
+  z-index: 10;
+  top: 30px;
+  left: 25px;
+  font-family: "Bebas Neue", cursive;
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 1;
+  color: #fff; }
+  .burgers__title::before {
+    content: "try it today";
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 25px; }
+
+.burgers__img {
+  background-repeat: no-repeat;
+  background-size: cover; }

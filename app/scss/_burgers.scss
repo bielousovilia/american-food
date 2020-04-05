@@ -1,0 +1,49 @@
+//доделать при наведению мышки появляется затемнение
+
+.burgers {
+    padding: 80px 20px 35px;
+}
+
+.burgers__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.burgers__left, .burgers__right, .burgers__bottom {
+    position: relative;
+}
+.burgers__left, .burgers__right {
+    width: 50%;
+}
+
+.burgers__left {
+    margin-right: 20px;
+}
+
+.burgers__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left:20px;
+}
+
+.burgers__title {
+    position: absolute;
+    z-index: 10;
+    top: 30px;
+    left: 25px;
+    @include style__text($bebasNeue, 42px, 400, 32px, 1, #fff);
+    &::before {
+        content: "try it today";
+        display: inline-block;
+        margin-bottom: 10px;
+        font-size: 25px;
+    }
+}
+
+.burgers__img {
+    background: {
+        repeat: no-repeat;
+        size: cover;
+    }
+}
