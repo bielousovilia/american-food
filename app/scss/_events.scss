@@ -1,0 +1,63 @@
+.events {
+    padding: 65px 0px;
+}
+
+.slider__inner {
+    display: flex;
+    justify-content: space-between;
+    // align-items: center;
+
+}
+
+.slider__text {
+    padding: 60px 50px 90px;
+}
+
+.slider__title {
+    margin-bottom: 40px;
+    @include style__text($alfaSlab, 42px, 400, 46px, 1px, $brown);
+
+    &::before {
+        content: "discover";
+        display: block;
+        margin-bottom: 10px;
+        @include style__text($bebasNeue, 29px, 400, 24px, 1.75px, #3d3d3d);
+    }
+}
+
+.slider__sign {
+    @include style__text($montserrat, 21px, 400, 28px, 1px, #3d3d3d);
+}
+
+.slider__img {
+    margin: 25px 25px 0px 0px;
+}
+
+//стили слайдера
+.slick-slider {
+    box-shadow: 20px 5px 20px rgba(0, 0, 0, 0.17)
+}
+
+.slick-dots {
+    display: flex;
+    list-style-type: none;
+    padding: 0px 0px 60px 50px;
+
+    li button {
+        width: 17px;
+        height: 17px;
+        margin-right: 8px;
+        padding: 0;
+        border: none;
+        font: inherit;
+        color: inherit;
+        border-radius: 50%;
+        color: #dcdcdc;
+        background-color: #dcdcdc;
+    }
+
+    .slick-active button {
+        background-color: #ffc045;
+        color: #ffc045;
+    }
+}
