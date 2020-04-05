@@ -46,3 +46,24 @@ nav {
         color: #d1661a;
     }
 }
+
+.header__content {
+    padding-top: 50px;
+}
+
+.header__upsign {
+    display: inline-block;
+    margin-bottom: 40px;
+    padding: 16px 18px;
+    border: 2px dashed $brown;
+    @include style__text($bebasNeue, 24px, 400, 32px, 1px, $brown);
+}
+
+.header__title {
+    margin-bottom: 30px;
+    @include style__text($alfaSlab, 114px, 400px, 61px, 1px, $brown);
+}
+
+.header__downsign {
+    @include style__text($alfaSlab, 56px, 400, 61px, 1px, $brown);
+}

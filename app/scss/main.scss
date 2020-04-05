@@ -10,6 +10,11 @@ body {
     @include style__text($montserrat, 14px, 400, 24px, 1px, #000);
 }
 
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0px;
+    padding: 0px;
+}
+
 .container {
     width: 90%;
     max-width: 1200px;
