@@ -402,3 +402,72 @@ nav {
     padding: 20px;
     border: 1px solid #bebebe;
     border-radius: 5px; }
+
+.footer {
+  padding: 80px 0px 0px;
+  background-image: url(../images/footer__bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top; }
+
+.footer__logo {
+  margin-bottom: 48px; }
+
+.footer__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 150px; }
+
+.footer__text {
+  max-width: 521px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 1px;
+  color: #fff; }
+
+.footer__adres, .footer__mail {
+  display: block;
+  margin-left: 30px;
+  font-family: "Bebas Neue", cursive;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 1px;
+  color: #fff; }
+
+.footer__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 10px;
+  font-size: 32px;
+  color: #fff; }
+  .footer__bottom .footer__links i {
+    margin-left: 10px; }
+
+.footer__rights, .footer_links {
+  display: block; }
+
+.footer__rights {
+  font-family: "Bebas Neue", cursive;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 1px;
+  color: #fff;
+  text-transform: uppercase; }
