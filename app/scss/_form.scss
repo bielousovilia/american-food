@@ -1,0 +1,42 @@
+.form {
+    // position: relative;
+    padding: 65px 0px 85px;
+    background: {
+        image: url(../images/form__bg.png);
+        size: cover;
+        position: top;
+        repeat: no-repeat;
+    }
+}
+
+.form__text {
+    text-align: center;
+}
+
+.form__title {
+    position: relative;
+    margin-bottom: 75px;
+    @include style__text($alfaSlab, 50px, 400, 46px, 3px, $brown);
+    text-transform: uppercase;
+    
+    &::before {
+        //content: "Reservation";
+        position: absolute;
+        
+        display: block;
+    }
+}
+
+.form__inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    input {
+        width: 350px;
+        margin-bottom: 25px;
+        padding: 20px;
+        border: 1px solid #bebebe;
+        border-radius: 5px;
+    }
+}
