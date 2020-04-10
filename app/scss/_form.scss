@@ -1,5 +1,5 @@
 .form {
-    // position: relative;
+    display: none;
     padding: 65px 0px 85px;
     background: {
         image: url(../images/form__bg.png);
@@ -20,9 +20,7 @@
     text-transform: uppercase;
     
     &::before {
-        //content: "Reservation";
         position: absolute;
-        
         display: block;
     }
 }

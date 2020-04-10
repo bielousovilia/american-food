@@ -13,7 +13,6 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 0px; }
 
 .container {
-  width: 90%;
   max-width: 1200px;
   margin: 0px auto;
   padding: 0px 15px; }
@@ -158,6 +157,7 @@ nav {
   opacity: 0.9; }
 
 .burgers {
+  display: none;
   padding: 80px 20px 35px; }
 
 .burgers__content {
@@ -212,6 +212,7 @@ nav {
   background-size: cover; }
 
 .choose {
+  display: none;
   padding: 35px 0px 65px; }
 
 .choose__text {
@@ -293,6 +294,7 @@ nav {
     background-color: #bf2222; }
 
 .events {
+  display: none;
   padding: 65px 0px; }
 
 .slider__inner {
@@ -362,6 +364,7 @@ nav {
     color: #ffc045; }
 
 .form {
+  display: none;
   padding: 65px 0px 85px;
   background-image: url(../images/form__bg.png);
   background-size: cover;
