@@ -60,3 +60,63 @@
         background-color:  #bf2222;
     }
 }
+
+@media (max-width: 1199px) {
+
+}
+
+@media (max-width: 991px) {
+    .burger__block {
+
+        .burger__img {
+            margin: 0px 0px 35px 0px;
+        }
+
+        .burger__name {
+            font-size: 28px;
+        }
+
+        .burger__text {
+            font-size: 14px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    
+    .choose__inner {
+        flex-direction: column;
+    }
+
+    .burger__block {
+        margin: 0px 0px 45px 0px;
+        
+        .burger__img {
+            object-fit: contain;
+        }
+
+        .burger__name {
+            font-size: 32px;
+        }
+
+        .burger__text {
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+
+    .choose {
+        padding: 15px 0px 0px 0px;
+    }
+
+    .choose__title {
+        font-size: 35px;
+    }
+
+    .choose__sign {
+        font-size: 14px;
+    }
+}
