@@ -5,6 +5,10 @@ html, body {
     height: 100%;
 }
 
+.hide {
+    display: none;
+}
+
 body {
     box-sizing: border-box;
     @include style__text($montserrat, 14px, 400, 24px, 1px, #000);

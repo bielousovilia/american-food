@@ -1,6 +1,9 @@
 html, body {
   height: 100%; }
 
+.hide {
+  display: none; }
+
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -62,6 +65,8 @@ header {
       -ms-flex-align: center;
           align-items: center;
   padding: 35px 0px 0px; }
+  .logo .logo__img img {
+    max-width: 100%; }
 
 .logo__phone {
   font-family: "Montserrat", sans-serif;
@@ -75,8 +80,12 @@ header {
   font-size: 28px; }
 
 nav {
-  position: relative;
-  z-index: 10; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
   nav .menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -132,6 +141,10 @@ nav {
   line-height: 61px;
   letter-spacing: 1px;
   color: #3d2514; }
+
+@media (min-width: 320px) and (max-width: 575px) {
+  .logo__phone {
+    display: none; } }
 
 .burgers {
   display: none;
