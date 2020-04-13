@@ -1,5 +1,4 @@
 .choose {
-    display: none;
     padding: 35px 0px 65px;
 }
 
@@ -29,14 +28,16 @@
 .choose__inner {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
 }
 
 .burger__block {
-    width: 33.33333%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     text-align: center;
 
     .burger__img {
+        max-width: 100%;
         margin-bottom: 70px;
     }
 
@@ -52,6 +53,7 @@
 
     .burger__link {
         display: inline-block;
+        align-self: center;
         padding: 15px 25px;
         @include style__text($alfaSlab, 17px, 400, 37px, 1px, #fff);
         text-decoration: none;
