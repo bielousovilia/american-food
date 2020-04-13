@@ -1,13 +1,16 @@
 //доделать при наведению мышки появляется затемнение
 
 .burgers {
-    display: none;
     padding: 80px 20px 35px;
 }
 
 .burgers__content {
     display: flex;
     justify-content: space-between;
+
+    img {
+        max-width: 100%;
+    }
 }
 
 .burgers__left, .burgers__right, .burgers__bottom {
@@ -42,9 +45,99 @@
     }
 }
 
-.burgers__img {
-    background: {
-        repeat: no-repeat;
-        size: cover;
+@media (min-width: 320px) and (max-width: 575px) {
+    .burgers {
+        padding: 20px 5px 20px 5px;
     }
+
+    .burgers__content {
+        flex-direction: column;
+    }
+
+    .burgers__left {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .burgers__right {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .burgers__title {
+        top: 10px;
+        left: 10px;
+        font-size: 28px;
+
+        .burgers__line {
+            display: inline-block;
+        }
+
+        &::before {
+            margin: 0px 0px 0px 0px;
+            font-size: 14px;
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+    .burgers {
+        padding: 20px 5px 20px 5px;
+    }
+
+    .burgers__content {
+        flex-direction: column;
+    }
+
+    .burgers__left {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .burgers__right {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .burgers__line {
+        display: inline-block;
+    }
+
+    .burgers__img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    
+    .burgers {
+        padding: 20px 5px 20px 5px;
+    }
+
+    .burgers__title {
+        top: 10px;
+        left: 10px;
+        font-size: 28px;
+
+        .burgers__line {
+            display: inline-block;
+        }
+
+        &::before {
+            margin: 0px 0px 0px 0px;
+            font-size: 14px;
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .burgers__line {
+        display: inline-block;
+    }
+}
+
+@media (min-width: 1200px) {
+
 }
