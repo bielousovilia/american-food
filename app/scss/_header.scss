@@ -29,8 +29,10 @@ header {
 }
 
 nav {
+
     display: flex;
     justify-content: flex-end;
+
     .menu {
         display: flex;
         justify-content: flex-end;
@@ -53,6 +55,11 @@ nav {
 
     .menu__link:hover {
         color: #d1661a;
+    }
+
+    .nav__bars {
+        display: none;
+        font-size: 32px;
     }
 }
 
@@ -81,13 +88,80 @@ nav {
         }
     }
 
+    .header__upcontent {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin: 0px 0px 25px 0px;
+    }
+
     .logo__phone {
         display: none;
+    }
+
+    nav {
+        .menu {
+            display: none;
+        }
+
+        .nav__bars {
+            display: inline-block;
+            margin: 0px 0px 0px 25px;
+            
+        }
+    }
+
+    .header__upsign {
+        padding: 8px 10px;
+        font-size: 18px;
+    }
+
+    .header__title {
+        margin: 0px 0px 10px 0px;
+        font-size: 70px;
+    }
+
+    .header__downsign {
+        font-size: 38px;
     }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
 
+    .header__upcontent {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin: 0px 0px 50px 0px;
+    }
+
+    .logo__phone {
+        display: none;
+    }
+
+    nav {
+        .menu {
+            display: none;
+        }
+
+        .nav__bars {
+            display: inline-block;
+        }
+    }
+
+    .header__upsign {
+        margin: 0px 0px 80px 0px;
+        
+    }
+
+    .header__title {
+        margin: 0px 0px 20px 0px;
+        font-size: 100px;
+    }
+
+    .header__downsign {
+        font-size: 46px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
