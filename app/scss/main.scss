@@ -48,6 +48,13 @@ h1, h2, h3, h4, h5, h6, p {
 @import "form";
 @import "footer";
 
+@media (orientation: landscape) and (max-width: 767px) {
+    
+    header {
+        height: 150vh;
+    }
+}
+
 // @media (max-width: 1199px) {
 
 // }
@@ -56,7 +63,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 // }
 
-// @media (max-width: 767px) {
+// @media  {
 
 // }
 

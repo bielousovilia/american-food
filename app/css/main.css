@@ -745,3 +745,7 @@ nav {
     margin: 0px 25px 0px 0px; }
   .footer__adres-text {
     padding: 0px 0px 0px 15px; } }
+
+@media (orientation: landscape) and (max-width: 767px) {
+  header {
+    height: 150vh; } }
