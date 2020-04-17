@@ -1,3 +1,7 @@
+.style-menu {
+    display: block !important;
+}
+
 header {
     height: 100vh;
     background: {
@@ -32,6 +36,10 @@ nav {
 
     display: flex;
     justify-content: flex-end;
+
+    .nav__inner {
+        position: relative;
+    }
 
     .menu {
         display: flex;
@@ -80,54 +88,15 @@ nav {
     @include style__text($alfaSlab, 56px, 400, 61px, 1px, $brown);
 }
 
-@media (min-width: 320px) and (max-width: 575px) {
+@media (max-width: 1199px) {
 
-    .header {
-        background: {
-            
-        }
-    }
-
-    .header__upcontent {
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-        margin: 0px 0px 25px 0px;
-    }
-
-    .logo__phone {
-        display: none;
-    }
-
-    nav {
-        .menu {
-            display: none;
-        }
-
-        .nav__bars {
-            display: inline-block;
-            margin: 0px 0px 0px 25px;
-            
-        }
-    }
-
-    .header__upsign {
-        margin: 0px 0px 170px 0px;
-        padding: 8px 10px;
-        font-size: 18px;
-    }
-
-    .header__title {
-        margin: 0px 0px 10px 0px;
-        font-size: 70px;
-    }
-
-    .header__downsign {
-        font-size: 38px;
-    }
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
+@media (max-width: 991px) {
+
+}
+
+@media (max-width: 767px) {
 
     .header__upcontent {
         display: flex;
@@ -165,14 +134,31 @@ nav {
     }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
 
+@media (max-width: 575px) {
+
+    .header__upcontent {
+        margin: 0px 0px 25px 0px;
+    }
+
+    nav {
+            margin: 0px 0px 0px 25px;
+    }
+
+    .header__upsign {
+        margin: 0px 0px 170px 0px;
+        padding: 8px 10px;
+        font-size: 18px;
+    }
+
+    .header__title {
+        margin: 0px 0px 10px 0px;
+        font-size: 70px;
+    }
+
+    .header__downsign {
+        font-size: 38px;
+    }
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
 
-}
-
-@media (min-width: 1200px) {
-
-}
