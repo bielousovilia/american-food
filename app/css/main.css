@@ -46,10 +46,8 @@ h1, h2, h3, h4, h5, h6, p {
   margin: 0px auto;
   padding: 0px 15px; }
 
-.style-menu {
-  display: block !important; }
-
 header {
+  overflow: hidden;
   height: 100vh;
   background-image: url(./../images/header-bg.jpg);
   background-position: bottom;
@@ -89,8 +87,6 @@ nav {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end; }
-  nav .nav__inner {
-    position: relative; }
   nav .menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -151,6 +147,51 @@ nav {
   color: #3d2514; }
 
 @media (max-width: 767px) {
+  @-webkit-keyframes test1 {
+    from {
+      top: 50px;
+      right: -1000px; }
+    to {
+      top: 50px;
+      right: -20px; } }
+  @keyframes test1 {
+    from {
+      top: 50px;
+      right: -1000px; }
+    to {
+      top: 50px;
+      right: -20px; } }
+  @-webkit-keyframes test2 {
+    from {
+      top: 50px;
+      right: -20px; }
+    to {
+      top: 50px;
+      right: -1000px; } }
+  @keyframes test2 {
+    from {
+      top: 50px;
+      right: -20px; }
+    to {
+      top: 50px;
+      right: -1000px; } }
+  .nav__inner {
+    position: relative; }
+  .style-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    -webkit-animation-name: test1;
+            animation-name: test1;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    top: 50px;
+    right: -20px;
+    list-style: none;
+    text-align: center; }
   .header__upcontent {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -161,11 +202,22 @@ nav {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-    margin: 0px 0px 50px 0px; }
+    margin: 0px 0px 100px 0px; }
   .logo__phone {
     display: none; }
   nav .menu {
-    display: none; }
+    position: absolute;
+    right: -1000px;
+    z-index: 0;
+    -webkit-animation-name: test2;
+            animation-name: test2;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear; }
+  nav .menu__link {
+    width: 90px;
+    padding: 0px 0px 0px 0px; }
   nav .nav__bars {
     display: inline-block; }
   .header__upsign {
@@ -178,9 +230,17 @@ nav {
 
 @media (max-width: 575px) {
   .header__upcontent {
-    margin: 0px 0px 25px 0px; }
+    margin: 0px 0px 75px 0px; }
   nav {
     margin: 0px 0px 0px 25px; }
+    nav .style-menu {
+      top: 50px;
+      right: -20px; }
+    nav .menu__item {
+      margin: 0px;
+      font-size: 16px; }
+    nav .menu__link {
+      width: 75px; }
   .header__upsign {
     margin: 0px 0px 170px 0px;
     padding: 8px 10px;
