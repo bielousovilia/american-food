@@ -54,6 +54,10 @@ nav {
         transition: color 0.25s linear;
     }
 
+    .menu__link:last-child {
+        padding-right: 0px;
+    }
+
     .menu__link:hover {
         color: #d1661a;
     }

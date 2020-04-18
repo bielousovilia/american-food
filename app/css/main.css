@@ -111,6 +111,8 @@ nav {
     -webkit-transition: color 0.25s linear;
     -o-transition: color 0.25s linear;
     transition: color 0.25s linear; }
+  nav .menu__link:last-child {
+    padding-right: 0px; }
   nav .menu__link:hover {
     color: #d1661a; }
   nav .nav__bars {
@@ -744,6 +746,10 @@ nav {
   letter-spacing: 1px;
   color: #fff;
   text-transform: uppercase; }
+
+.footer__link {
+  color: #fff;
+  text-decoration: none; }
 
 @media (min-width: 320px) and (max-width: 575px) {
   .footer__img {
