@@ -260,7 +260,8 @@ nav {
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  margin: 0px 0px 40px 0px; }
   .burgers__content img {
     max-width: 100%; }
 
@@ -302,6 +303,22 @@ nav {
     display: inline-block;
     margin-bottom: 10px;
     font-size: 25px; }
+
+.burgers__link {
+  text-align: center; }
+
+.burger__link {
+  display: inline-block;
+  margin: 0px auto;
+  padding: 15px 20px;
+  background-color: #ffc045;
+  font-family: "Bebas Neue", cursive;
+  font-size: 25px;
+  font-weight: 400px;
+  line-height: 32px;
+  letter-spacing: 1px;
+  color: #3d2514;
+  text-decoration: none; }
 
 @media (min-width: 320px) and (max-width: 575px) {
   .burgers {
@@ -370,19 +387,6 @@ nav {
 
 .choose__text {
   text-align: center; }
-
-.choose__link {
-  display: inline-block;
-  margin-bottom: 40px;
-  padding: 15px 20px;
-  background-color: #ffc045;
-  font-family: "Bebas Neue", cursive;
-  font-size: 25px;
-  font-weight: 400px;
-  line-height: 32px;
-  letter-spacing: 1px;
-  color: #3d2514;
-  text-decoration: none; }
 
 .choose__title {
   margin-bottom: 30px;

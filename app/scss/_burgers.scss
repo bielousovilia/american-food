@@ -7,7 +7,7 @@
 .burgers__content {
     display: flex;
     justify-content: space-between;
-
+    margin: 0px 0px 40px 0px;
     img {
         max-width: 100%;
     }
@@ -43,6 +43,19 @@
         margin-bottom: 10px;
         font-size: 25px;
     }
+}
+
+.burgers__link {
+    text-align: center;
+}
+
+.burger__link {
+    display: inline-block;
+    margin: 0px auto;
+    padding: 15px 20px;
+    background-color: #ffc045;
+    @include style__text($bebasNeue, 25px, 400px, 32px, 1px, $brown);
+    text-decoration: none;
 }
 
 @media (min-width: 320px) and (max-width: 575px) {
