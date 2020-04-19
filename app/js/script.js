@@ -21,6 +21,15 @@ function main() {
     btnMenu.on('click', function() {
         menu.toggleClass('menu').toggleClass('style-menu');
     });
+
+    $('a[href^="#"]').on('click', function(event) {
+        event.preventDefault();
+
+        let sc = $(this).attr("href"),
+            dn = $(sc).offset().top;
+
+        $('html, body').animate({scrollTop: dn}, 800);
+      });
     
     console.log(menu);
 }

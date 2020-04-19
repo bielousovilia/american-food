@@ -87,6 +87,14 @@ nav {
 
 @media (max-width: 767px) {
 
+    header {
+        background: {
+            position: center;
+            image: url(../images/header-bg-768.png);
+            size: 150%;
+        }
+    }
+
     @keyframes test1 {
         from {
             top: 50px;
@@ -110,7 +118,6 @@ nav {
             right: -1000px;
         }
     }
-
 
     .nav__inner {
         position: relative;

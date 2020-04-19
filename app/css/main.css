@@ -149,6 +149,10 @@ nav {
   color: #3d2514; }
 
 @media (max-width: 767px) {
+  header {
+    background-position: center;
+    background-image: url(../images/header-bg-768.png);
+    background-size: 150%; }
   @-webkit-keyframes test1 {
     from {
       top: 50px;
